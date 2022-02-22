@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>BooksRead</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#"><img src="./image/logo.png" alt=""></a>
+        <form class="d-flex">
+            <div class="input-div">
+                <img src="./image/searchicon.png" alt="">
+                <input type="search" placeholder="Search books" class="input" id="input">
+            </div>
+        </form>
+        
+        <button class="button" id="logout"><a href="../index.html">LogOut</a></button>
+    </nav>
+    <div class="results">
+        <p class="res-count" id="results">Total 865 result's.</p>
+        <div class="button-div">
+            <img src="./image/calendar.png" alt="">
+            <button class="order-button" id="order">Order by newest</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 sidebar">
+                <h2 class="bookmarks">Bookmarks</h2>
+            </div>
+            <div class="col-9" id="column">
+               <div class="col-row"  id="cards">
+                
+               </div>
+               <nav class="pagination-nav" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="/"  aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span class="sr-only">Next</span>
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEl"></div>
+    <script src="./js/login_validation.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
